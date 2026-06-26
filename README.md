@@ -2,6 +2,8 @@
 
 [![Component Registry](https://components.espressif.com/components/valdanylchuk/breezy_rgb_lcd/badge.svg)](https://components.espressif.com/components/valdanylchuk/breezy_rgb_lcd)
 
+**Notice:** This repo is outdated, moved to [breezybox/src/components/breezy_rgb_lcd](https://github.com/valdanylchuk/breezybox/tree/main/src/components/breezy_rgb_lcd)
+
 This is the rgb_lcd display driver used in [BreezyBox demo](https://github.com/valdanylchuk/breezydemo), a mini shell for esp32-s3. It seemed nice and reusable, so I release it as a standalone component with minimal dependencies, for people who need a similar display driver, but do not need full BreezyBox shell.
 
 I wrote this to make a big 7" 1024x600 display work fast with esp32-s3. The key is to keep a small buffer for text or low-res graphics in IRAM, and render/scale to a small DMA bounce buffer on the fly, e.g. 10 scan lines at a time.
